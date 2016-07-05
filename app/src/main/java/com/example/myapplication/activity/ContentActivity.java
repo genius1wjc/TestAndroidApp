@@ -12,13 +12,11 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
+import com.example.myapplication.CommonConstants;
 import com.example.myapplication.R;
 
 
 public class ContentActivity extends Activity {
-
-    private static final String PROVIDER_NAME = "androidcontentproviderdemo.androidcontentprovider.images";
-    private static final Uri CONTENT_URI = Uri.parse("content://" + PROVIDER_NAME + "/images");
 
     private ListView listView;
     private SimpleCursorAdapter adapter;
@@ -41,7 +39,7 @@ public class ContentActivity extends Activity {
     }
 
     private void refreshValuesFromContentProvider() {
-        CursorLoader cursorLoader = new CursorLoader(getBaseContext(), CONTENT_URI,
+        CursorLoader cursorLoader = new CursorLoader(getBaseContext(), CommonConstants.CONTENT_URI,
                 null, null, null, null);
         Cursor c = cursorLoader.loadInBackground();
         adapter.swapCursor(c);
@@ -52,7 +50,7 @@ public class ContentActivity extends Activity {
         contentValues.put("IMAGETITLE", ((EditText) findViewById(R.id.edtTxtImageTitle)).getText().toString());
         contentValues.put("IMAGEURL" , ((EditText)findViewById(R.id.edtImageUrl)).getText().toString());
         contentValues.put("IMAGEDESC", ((EditText) findViewById(R.id.edtImageDesc)).getText().toString());
-        Uri uri = getContentResolver().insert(CONTENT_URI, contentValues);
+        Uri uri = getContentResolver().insert(CommonConstants.CONTENT_URI, contentValues);
         Toast.makeText(getBaseContext(), uri.toString(), Toast.LENGTH_LONG).show();
         refreshValuesFromContentProvider();
     }

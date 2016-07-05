@@ -64,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void addDrawer() {
         ListView mDrawerList = (ListView)findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
-        String[] osArray = { "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] osArray = { "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
@@ -77,6 +77,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Loader":
+                        startActivity(new Intent(ProfileActivity.this, LoaderActivity.class));
+                        break;
                     case "Dialog":
                         startActivity(new Intent(ProfileActivity.this, DialogActivity.class));
                         break;
