@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.example.googlemaps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreenAct"
+            android:label="Logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".activity.MyListActivity"
+            android:label="List" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".activity.DatabaseActivity"
+            android:label="Database" />
+
+        <service android:name=".MusicPlayService" />
+
+        <activity
+            android:name=".activity.MusicPlayActivity"
+            android:label="Music Play" />
+        <activity
+            android:name=".activity.BroadcastAct"
+            android:label="Broadcast" />
+        <activity
+            android:name=".activity.GridActivity"
+            android:label="@string/title_activity_grid"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ScreenSizeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Material" />
+        <activity android:name=".activity.RestActivity" />
+
+        <service
+            android:name=".utility.RestService"
+            android:exported="false" />
+
+        <activity android:name=".activity.GsonActivity" />
+        <activity android:name=".activity.MapActivity" />
+
+        <!-- Google MAP API key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDmCRJkjStEOKicSmZK-2Q4dl3EeFRcNlw" />
+
+        <provider
+            android:name=".ImageProvider"
+            android:authorities="com.example.myapplication.ImageProvider" />
+
+        <activity android:name=".activity.ContentActivity" />
+        <activity
+            android:name=".activity.CacheActivity"
+            android:label="Cache" />
+        <activity
+            android:name=".activity.PropAnimActivity"
+            android:label="Animation" />
+        <activity android:name=".activity.TasksActivity" />
+        <activity android:name=".activity.CustomListAct" />
+        <activity
+            android:name=".activity.TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.RecyclerViewActi" />
+        <activity android:name=".activity.DialogActivity"></activity>
+    </application>
+
+</manifest>

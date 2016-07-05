@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="toppings">
+        <item>Bubble</item>
+        <item>Onion</item>
+        <item>Lettuce</item>
+    </string-array>
+</resources>
