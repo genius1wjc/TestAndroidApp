@@ -11,8 +11,8 @@ import android.widget.DatePicker;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import com.example.myapplication.Fragment.AlertDialogFrag;
-import com.example.myapplication.Fragment.DatePickerFragment;
+import com.example.myapplication.fragment.AlertDialogFrag;
+import com.example.myapplication.fragment.DatePickerFragment;
 import com.example.myapplication.R;
 
 import java.util.Calendar;

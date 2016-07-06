@@ -22,7 +22,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.Fragment.AutoCompleteFragment;
+import com.example.myapplication.fragment.AutoCompleteFragment;
 import com.example.myapplication.task.DownloadImageTask;
 import com.example.myapplication.R;
 
