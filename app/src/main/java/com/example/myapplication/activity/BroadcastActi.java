@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.myapplication.R;
 
-public class BroadcastAct extends AppCompatActivity {
+public class BroadcastActi extends AppCompatActivity {
 
     // The Intent namespace is global. Make sure that Intent action names and other strings
     // are written in a namespace you own, or else you may inadvertently conflict with other applications.

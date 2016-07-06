@@ -9,7 +9,7 @@ import android.util.Log;
 import com.example.myapplication.DatabaseContract;
 import com.example.myapplication.R;
 
-public class DatabaseActivity extends AppCompatActivity {
+public class DatabaseActi extends AppCompatActivity {
 
     private static final String TAG = "DBActivity";
 

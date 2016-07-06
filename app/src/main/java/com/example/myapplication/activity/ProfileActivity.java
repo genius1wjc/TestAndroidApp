@@ -64,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void addDrawer() {
         ListView mDrawerList = (ListView)findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
-        String[] osArray = { "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] osArray = {"Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
@@ -77,6 +77,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Inflater":
+                        startActivity(new Intent(ProfileActivity.this, InflaterActi.class));
+                        break;
                     case "App Bar":
                         startActivity(new Intent(ProfileActivity.this, AppBarActivity.class));
                         break;
@@ -93,7 +96,7 @@ public class ProfileActivity extends AppCompatActivity {
                         startActivity(new Intent(ProfileActivity.this, TabbedActivity.class));
                         break;
                     case "Custom List":
-                        startActivity(new Intent(ProfileActivity.this, CustomListAct.class));
+                        startActivity(new Intent(ProfileActivity.this, CustomListActi.class));
                         break;
                     case "Tasks":
                         startActivity(new Intent(ProfileActivity.this, TasksActivity.class));
@@ -105,7 +108,7 @@ public class ProfileActivity extends AppCompatActivity {
                         startActivity(new Intent(ProfileActivity.this, CacheActivity.class));
                         break;
                     case "Database":
-                        startActivity(new Intent(ProfileActivity.this, DatabaseActivity.class));
+                        startActivity(new Intent(ProfileActivity.this, DatabaseActi.class));
                         break;
                     case "Music Play":
                         startActivity(new Intent(ProfileActivity.this, MusicPlayActivity.class));
@@ -114,7 +117,7 @@ public class ProfileActivity extends AppCompatActivity {
                         startActivity(new Intent(ProfileActivity.this, MyListActivity.class));
                         break;
                     case "Broadcast":
-                        startActivity(new Intent(ProfileActivity.this, BroadcastAct.class));
+                        startActivity(new Intent(ProfileActivity.this, BroadcastActi.class));
                         break;
                     case "Grid":
                         startActivity(new Intent(ProfileActivity.this, GridActivity.class));
@@ -205,7 +208,7 @@ public class ProfileActivity extends AppCompatActivity {
      * @param v
      */
     public void showDBView(View v) {
-        Intent intent = new Intent(this, DatabaseActivity.class);
+        Intent intent = new Intent(this, DatabaseActi.class);
         intent.putExtra(INTENT_KEY, "some random string");
         startActivityForResult(intent, SHOW_DB_REQUEST);
     }

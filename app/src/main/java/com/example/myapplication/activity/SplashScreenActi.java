@@ -11,7 +11,7 @@ import android.view.WindowManager;
 
 import com.example.myapplication.R;
 
-public class SplashScreenAct extends Activity {
+public class SplashScreenActi extends Activity {
 
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 5000;
@@ -38,7 +38,7 @@ public class SplashScreenAct extends Activity {
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashScreenAct.this, LoginActivity.class);
+                Intent i = new Intent(SplashScreenActi.this, LoginActivity.class);
                 startActivity(i);
 
                 // close this activity

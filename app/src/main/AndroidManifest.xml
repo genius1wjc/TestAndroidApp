@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.SplashScreenAct"
+            android:name=".activity.SplashScreenActi"
             android:label="Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +42,7 @@
             android:name=".activity.ProfileActivity"
             android:label="@string/title_activity_profile" />
         <activity
-            android:name=".activity.DatabaseActivity"
+            android:name=".activity.DatabaseActi"
             android:label="Database" />
 
         <service android:name=".MusicPlayService" />
@@ -51,7 +51,7 @@
             android:name=".activity.MusicPlayActivity"
             android:label="Music Play" />
         <activity
-            android:name=".activity.BroadcastAct"
+            android:name=".activity.BroadcastActi"
             android:label="Broadcast" />
         <activity
             android:name=".activity.GridActivity"
@@ -87,7 +87,7 @@
             android:name=".activity.PropAnimActivity"
             android:label="Animation" />
         <activity android:name=".activity.TasksActivity" />
-        <activity android:name=".activity.CustomListAct" />
+        <activity android:name=".activity.CustomListActi" />
         <activity
             android:name=".activity.TabbedActivity"
             android:label="@string/title_activity_tabbed"
@@ -96,12 +96,13 @@
         <activity android:name=".activity.DialogActivity" />
         <activity android:name=".activity.LoaderActivity" />
         <activity
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:name=".activity.AppBarActivity">
+            android:name=".activity.AppBarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.ProfileActivity" />
         </activity>
+        <activity android:name=".activity.InflaterActi"></activity>
     </application>
 
 </manifest>

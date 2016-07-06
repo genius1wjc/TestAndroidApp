@@ -7,7 +7,7 @@ import android.widget.ListView;
 import com.example.myapplication.CustomAdapter;
 import com.example.myapplication.R;
 
-public class CustomListAct extends AppCompatActivity {
+public class CustomListActi extends AppCompatActivity {
     ListView lv;
     public static int[] prgmImages = { R.drawable.c, R.drawable.c_plus_plus, R.drawable.java, R.drawable.javascript,
             R.drawable.c, R.drawable.c_plus_plus, R.drawable.java, R.drawable.javascript,
