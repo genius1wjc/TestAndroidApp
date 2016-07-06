@@ -94,7 +94,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.RecyclerViewActi" />
         <activity android:name=".activity.DialogActivity" />
-        <activity android:name=".activity.LoaderActivity"></activity>
+        <activity android:name=".activity.LoaderActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".activity.AppBarActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ProfileActivity" />
+        </activity>
     </application>
 
 </manifest>
