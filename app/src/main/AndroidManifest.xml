@@ -103,7 +103,15 @@
                 android:value=".activity.ProfileActivity" />
         </activity>
         <activity android:name=".activity.InflaterActi" />
-        <activity android:name=".activity.SnackbarActi"></activity>
+        <activity android:name=".activity.SnackbarActi" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3e47aba1f59a8a50f75e4297e2886316d981c7cd" />
+
+        <activity android:name=".activity.TwitterLoginActi" />
+        <activity android:name=".activity.TweetViewActi" />
+        <activity android:name=".activity.TweetTimelineActi"></activity>
     </application>
 
 </manifest>

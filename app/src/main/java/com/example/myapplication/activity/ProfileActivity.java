@@ -64,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void addDrawer() {
         ListView mDrawerList = (ListView)findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
-        String[] osArray = {"Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] osArray = {"Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
@@ -77,6 +77,15 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Tweet Timeline":
+                        startActivity(new Intent(ProfileActivity.this, TweetTimelineActi.class));
+                        break;
+                    case "Tweet View":
+                        startActivity(new Intent(ProfileActivity.this, TweetViewActi.class));
+                        break;
+                    case "Twitter Login":
+                        startActivity(new Intent(ProfileActivity.this, TwitterLoginActi.class));
+                        break;
                     case "Snackbar":
                         startActivity(new Intent(ProfileActivity.this, SnackbarActi.class));
                         break;

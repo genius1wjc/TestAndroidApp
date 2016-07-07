@@ -10,8 +10,17 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.example.myapplication.R;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+
+import io.fabric.sdk.android.Fabric;
 
 public class SplashScreenActi extends Activity {
+
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "J9UCU0ng3H5zIkGY6D6DBvZTk";
+    private static final String TWITTER_SECRET = "xE4EioNkSHNgb4kMG0mQT1CTqpTESuORak4rKJYH77ObVV9voe";
+
 
     // Splash screen timer
     private static int SPLASH_TIME_OUT = 5000;
@@ -19,6 +28,8 @@ public class SplashScreenActi extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         setContentView(R.layout.activity_splash_screen);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
