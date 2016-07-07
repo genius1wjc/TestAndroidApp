@@ -64,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void addDrawer() {
         ListView mDrawerList = (ListView)findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
-        String[] osArray = {"Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] osArray = {"Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, osArray);
         mDrawerList.setAdapter(mAdapter);
@@ -77,6 +77,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Snackbar":
+                        startActivity(new Intent(ProfileActivity.this, SnackbarActi.class));
+                        break;
                     case "Inflater":
                         startActivity(new Intent(ProfileActivity.this, InflaterActi.class));
                         break;
