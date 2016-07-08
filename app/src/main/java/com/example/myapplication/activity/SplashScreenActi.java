@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import com.example.myapplication.R;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.crashlytics.android.Crashlytics;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -28,8 +29,11 @@ public class SplashScreenActi extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Use Fabric to integrate with Twitter and Crashlytics
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
-        Fabric.with(this, new Twitter(authConfig));
+        Fabric.with(this, new Twitter(authConfig), new Crashlytics());
+
         setContentView(R.layout.activity_splash_screen);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
