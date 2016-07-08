@@ -43,6 +43,8 @@ public class BroadcastActi extends AppCompatActivity {
         // Do not need to do this for broadcast sent by LocalBroadcastManager
         //intent.setPackage("com.example.myapplication");
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+
+        Toast.makeText(this, "Broadcast sent", Toast.LENGTH_LONG).show();
     }
 
     private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
