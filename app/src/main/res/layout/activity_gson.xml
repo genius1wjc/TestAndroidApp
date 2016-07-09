@@ -17,4 +17,23 @@
         android:onClick="gsonPrimitive"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Contacts"
+        android:onClick="launchContacts"
+        android:id="@+id/button8"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

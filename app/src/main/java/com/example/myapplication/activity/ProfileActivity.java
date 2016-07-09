@@ -64,9 +64,9 @@ public class ProfileActivity extends AppCompatActivity {
     private void addDrawer() {
         ListView mDrawerList = (ListView)findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
-        String[] osArray = {"Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] activities = {"Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content" };
-        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, osArray);
+        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, activities);
         mDrawerList.setAdapter(mAdapter);
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -77,6 +77,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Spinner":
+                        startActivity(new Intent(ProfileActivity.this, SpinnerActivity.class));
+                        break;
                     case "Tweet Timeline":
                         startActivity(new Intent(ProfileActivity.this, TweetTimelineActi.class));
                         break;
@@ -137,7 +140,7 @@ public class ProfileActivity extends AppCompatActivity {
                     case "Screen Size":
                         startActivity(new Intent(ProfileActivity.this, ScreenSizeActivity.class));
                         break;
-                    case "Rest":
+                    case "REST":
                         startActivity(new Intent(ProfileActivity.this, RestActivity.class));
                         break;
                     case "Gson":
@@ -150,7 +153,7 @@ public class ProfileActivity extends AppCompatActivity {
                         startActivity(new Intent(ProfileActivity.this, ContentActivity.class));
                         break;
                     default:
-                        Log.w(TAG, "No such activity");
+                        Toast.makeText(ProfileActivity.this, "No Such Activity", Toast.LENGTH_LONG).show();
                 }
             }
         });
