@@ -113,7 +113,8 @@
         <activity android:name=".activity.TwitterLoginActi" />
         <activity android:name=".activity.TweetViewActi" />
         <activity android:name=".activity.TweetTimelineActi" />
-        <activity android:name=".activity.SpinnerActivity"></activity>
+        <activity android:name=".activity.SpinnerActivity" />
+        <activity android:name=".activity.LongListActivity"></activity>
     </application>
 
 </manifest>
