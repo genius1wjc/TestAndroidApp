@@ -64,7 +64,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void addDrawer() {
         ListView mDrawerList = (ListView)findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
-        String[] activities = {"Video", "Simple Adapter", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] activities = {"Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content" };
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, activities);
         mDrawerList.setAdapter(mAdapter);
@@ -77,10 +77,10 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
-                    case "Video":
+                    case "Video/Activity Callbacks":
                         startActivity(new Intent(ProfileActivity.this, VideoActivity.class));
                         break;
-                    case "Simple Adapter":
+                    case "Simple Adapter/Long List":
                         startActivity(new Intent(ProfileActivity.this, LongListActivity.class));
                         break;
                     case "Spinner":
