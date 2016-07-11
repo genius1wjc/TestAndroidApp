@@ -114,7 +114,10 @@
         <activity android:name=".activity.TweetViewActi" />
         <activity android:name=".activity.TweetTimelineActi" />
         <activity android:name=".activity.SpinnerActivity" />
-        <activity android:name=".activity.LongListActivity"></activity>
+        <activity android:name=".activity.LongListActivity" />
+        <activity
+            android:name=".activity.VideoActivity"
+            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>
