@@ -47,7 +47,7 @@ public class BroadcastActi extends AppCompatActivity {
         Toast.makeText(this, "Broadcast sent", Toast.LENGTH_LONG).show();
     }
 
-    private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             Bundle b = intent.getBundleExtra("bundle");
