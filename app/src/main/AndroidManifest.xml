@@ -118,7 +118,8 @@
         <activity
             android:name=".activity.VideoActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".activity.GestureActi"></activity>
+        <activity android:name=".activity.GestureActi" />
+        <activity android:name=".activity.CustomViewActi"></activity>
     </application>
 
 </manifest>
