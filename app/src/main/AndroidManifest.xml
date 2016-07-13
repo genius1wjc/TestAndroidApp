@@ -120,7 +120,8 @@
             android:configChanges="orientation|screenSize" />
         <activity android:name=".activity.GestureActi" />
         <activity android:name=".activity.CustomViewActi" />
-        <activity android:name=".NotificationActi"></activity>
+        <activity android:name=".NotificationActi" />
+        <activity android:name=".activity.LayoutParamsActi"></activity>
     </application>
 
 </manifest>

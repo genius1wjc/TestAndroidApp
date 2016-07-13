@@ -16,7 +16,7 @@ import com.example.myapplication.R;
  *
  */
 public class AutoCompleteFragment extends Fragment {
-    String[] cities = { "New York City ", "Atlanta", "Beijing", "Nanning", "Chicago", "San Francisco" };
+    final String[] cities = {"New York City ", "Atlanta", "Beijing", "Nanning", "Chicago", "San Francisco"};
 
     public AutoCompleteFragment() {
         // Required empty public constructor
@@ -41,7 +41,7 @@ public class AutoCompleteFragment extends Fragment {
         imm.hideSoftInputFromWindow(getView().getWindowToken(), 0);
 
         AutoCompleteTextView text = (AutoCompleteTextView)getActivity().findViewById(R.id.autoCompleteTextView);
-        ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, cities);
+        ArrayAdapter<String> adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, cities);
         text.setAdapter(adapter);
         text.setThreshold(1);
     }

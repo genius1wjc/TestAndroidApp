@@ -45,7 +45,7 @@ public class AlertDialogFrag extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final List mSelectedItems = new ArrayList();  // Where we track the selected items
+        final List<Integer> mSelectedItems = new ArrayList();  // Where we track the selected items
         Bundle args = getArguments();
 
         if (args == null)
