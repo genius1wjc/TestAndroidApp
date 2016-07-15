@@ -11,6 +11,7 @@ import android.widget.EditText;
 
 import com.example.myapplication.GenericStudent;
 import com.example.myapplication.R;
+import com.example.myapplication.Student;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -39,17 +40,17 @@ public class GsonActivity extends AppCompatActivity {
             String result = gson.toJson(arr);
             Double one = gson.fromJson("1", Double.class);
 
-            //Student s = new Student("Jiechao", 1, true, Student.Grade.THREE);
+            Student s = new Student("Jiechao", 1, true, Student.Grade.THREE);
 
-            //Student.Nested n = new Student.Nested();
+            Student.Nested n = new Student.Nested();
 
-            //Log.e(TAG, box.isChecked() + "");
-            //Log.e(TAG, gson.toJson(s));
-            //Log.e(TAG, gson.toJson(n));
+            Log.d(TAG, box.isChecked() + "");
+            Log.d(TAG, gson.toJson(s));
+            Log.d(TAG, gson.toJson(n));
 
-            //String ss = gson.toJson(s);
-            //Student student = gson.fromJson(ss, Student.class);
-            //Log.e(TAG, student.toString());
+            String ss = gson.toJson(s);
+            Student student = gson.fromJson(ss, Student.class);
+            Log.d(TAG, student.toString());
 
             GenericStudent<Double> genericStudent = new GenericStudent<>(-3.4);
 

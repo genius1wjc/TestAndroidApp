@@ -122,7 +122,11 @@
         <activity android:name=".activity.CustomViewActi" />
         <activity android:name=".NotificationActi" />
         <activity android:name=".activity.LayoutParamsActi" />
-        <activity android:name=".activity.SortingActivity"></activity>
+        <activity android:name=".activity.SortingActivity" />
+        <activity
+            android:name=".activity.ParcelActivity"
+            android:label="@string/title_activity_parcel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
