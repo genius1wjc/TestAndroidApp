@@ -12,8 +12,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!-- Have to comment out the below to make the app run, doesn't make sense -->
-    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <permission
@@ -130,7 +129,7 @@
             android:name=".activity.ParcelActivity"
             android:label="@string/title_activity_parcel"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.PhotoActivity"></activity>
+        <activity android:name=".activity.PhotoActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -139,8 +138,10 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
+
+        <activity android:name=".activity.TimerActivity"></activity>
     </application>
 
 </manifest>
