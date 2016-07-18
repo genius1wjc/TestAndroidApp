@@ -92,7 +92,7 @@
         <activity android:name=".activity.TasksActivity" />
         <activity android:name=".activity.CustomListActi" />
         <activity
-            android:name=".activity.TabbedActivity"
+            android:name=".activity.ViewPagerActivity"
             android:label="@string/title_activity_tabbed"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.RecyclerViewActi" />
@@ -142,7 +142,8 @@
         </provider>
 
         <activity android:name=".activity.TimerActivity" />
-        <activity android:name=".activity.ViewAnimationActi"></activity>
+        <activity android:name=".activity.ViewAnimationActi" />
+        <activity android:name=".activity.HandlerActivity"></activity>
     </application>
 
 </manifest>
