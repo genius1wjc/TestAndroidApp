@@ -141,7 +141,8 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".activity.TimerActivity"></activity>
+        <activity android:name=".activity.TimerActivity" />
+        <activity android:name=".activity.ViewAnimationActi"></activity>
     </application>
 
 </manifest>
