@@ -6,4 +6,5 @@
     <color name="red">#FF0000</color>
     <color name="splashBackground">#000000</color>
     <color name="cardBackground">#8585ad</color>
+    <color name="yellow">#FFFF00</color>
 </resources>
