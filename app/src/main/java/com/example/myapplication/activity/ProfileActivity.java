@@ -67,8 +67,8 @@ public class ProfileActivity extends AppCompatActivity {
         ArrayAdapter<String> mAdapter;
 
         // TODO: turn these into enum
-        String[] activities = {"Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
-                "Screen Size", "REST", "Gson", "Map", "Content" };
+        String[] activities = {"Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+                "Screen Size", "REST", "Gson", "Map", "Content Provider"};
 
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, activities);
         mDrawerList.setAdapter(mAdapter);
@@ -81,6 +81,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Custom Attributes":
+                        startActivity(new Intent(ProfileActivity.this, CustomAttriActi.class));
+                        break;
                     case "Handler/Messenger":
                         startActivity(new Intent(ProfileActivity.this, HandlerActivity.class));
                         break;
@@ -189,8 +192,8 @@ public class ProfileActivity extends AppCompatActivity {
                     case "Map":
                         startActivity(new Intent(ProfileActivity.this, MapActivity.class));
                         break;
-                    case "Content":
-                        startActivity(new Intent(ProfileActivity.this, ContentActivity.class));
+                    case "Content Provider":
+                        startActivity(new Intent(ProfileActivity.this, ContentProviderActi.class));
                         break;
                     default:
                         Toast.makeText(ProfileActivity.this, "No Such Activity", Toast.LENGTH_LONG).show();

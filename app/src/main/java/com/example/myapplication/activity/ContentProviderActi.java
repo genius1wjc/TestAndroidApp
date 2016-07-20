@@ -16,7 +16,7 @@ import com.example.myapplication.CommonConstants;
 import com.example.myapplication.R;
 
 
-public class ContentActivity extends Activity {
+public class ContentProviderActi extends Activity {
 
     private ListView listView;
     private SimpleCursorAdapter adapter;

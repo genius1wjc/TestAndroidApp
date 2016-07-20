@@ -20,7 +20,7 @@
         android:protectionLevel="signature" />
 
     <application
-        android:name="android.support.multidex.MultiDexApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -82,7 +82,7 @@
             android:name=".ImageProvider"
             android:authorities="com.example.myapplication.ImageProvider" />
 
-        <activity android:name=".activity.ContentActivity" />
+        <activity android:name=".activity.ContentProviderActi" />
         <activity
             android:name=".activity.CacheActivity"
             android:label="Cache" />
@@ -143,7 +143,8 @@
 
         <activity android:name=".activity.TimerActivity" />
         <activity android:name=".activity.ViewAnimationActi" />
-        <activity android:name=".activity.HandlerActivity"></activity>
+        <activity android:name=".activity.HandlerActivity" />
+        <activity android:name=".activity.CustomAttriActi"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:orientation="vertical"
-    tools:context=".activity.ContentActivity">
+    tools:context=".activity.ContentProviderActi">
 
     <TextView
         android:id="@+id/txtViewImageTitle"
