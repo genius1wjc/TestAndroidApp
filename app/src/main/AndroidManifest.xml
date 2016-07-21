@@ -144,7 +144,10 @@
         <activity android:name=".activity.TimerActivity" />
         <activity android:name=".activity.ViewAnimationActi" />
         <activity android:name=".activity.HandlerActivity" />
-        <activity android:name=".activity.CustomAttriActi"></activity>
+        <activity android:name=".activity.CustomAttriActi" />
+        <activity android:name=".activity.BindServiceActi" />
+
+        <service android:name=".LocalService" />
     </application>
 
 </manifest>
