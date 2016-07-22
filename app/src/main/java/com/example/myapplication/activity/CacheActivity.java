@@ -9,6 +9,9 @@ import com.example.myapplication.task.DownloadImageTask;
 import com.example.myapplication.R;
 import com.example.myapplication.utility.ImageCacheUtils;
 
+/**
+ * Caches bitmap image
+ */
 public class CacheActivity extends Activity {
 
     DownloadImageTask task = null;
