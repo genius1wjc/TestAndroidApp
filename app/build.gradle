@@ -4,16 +4,6 @@ buildscript {
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.+'
-    }
-}
-
-buildscript {
-    repositories {
-        maven { url 'https://maven.fabric.io/public' }
-    }
-
-    dependencies {
         // The Fabric Gradle plugin uses an open ended version to react
         // quickly to Android tooling updates
         classpath 'io.fabric.tools:gradle:1.+'
@@ -26,7 +16,6 @@ apply plugin: 'io.fabric'
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
-
 
 android {
     compileSdkVersion 23
@@ -44,10 +33,30 @@ android {
         // Enabling multidex support.
         multiDexEnabled true
     }
+
     buildTypes {
+        debug {
+            debuggable true
+            buildConfigField "boolean", "REPORT_CRASHES", "true"
+        }
+
         release {
-            minifyEnabled false
+            minifyEnabled true
+            buildConfigField "boolean", "REPORT_CRASHES", "false"
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        prod {
+            applicationId = "com.example.myapplication.prod"
+            versionName = "1.0-paid"
+        }
+
+        mock {
+            applicationId = "com.example.myapplication.mock"
+            versionName = "1.0-free"
         }
     }
 }
