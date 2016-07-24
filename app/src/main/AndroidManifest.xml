@@ -148,6 +148,8 @@
         <activity android:name=".activity.BindServiceActi" />
 
         <service android:name=".LocalService" />
+
+        <activity android:name=".activity.FragmentActi"></activity>
     </application>
 
 </manifest>
