@@ -122,7 +122,7 @@
             android:configChanges="orientation|screenSize" />
         <activity android:name=".activity.GestureActi" />
         <activity android:name=".activity.CustomViewActi" />
-        <activity android:name=".NotificationActi" />
+        <activity android:name=".activity.NotificationActi" />
         <activity android:name=".activity.LayoutParamsActi" />
         <activity android:name=".activity.SortingActivity" />
         <activity
@@ -149,7 +149,10 @@
 
         <service android:name=".LocalService" />
 
-        <activity android:name=".activity.FragmentActi"></activity>
+        <activity android:name=".activity.FragmentActi" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>
