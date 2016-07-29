@@ -49,6 +49,7 @@ android {
     }
 
     productFlavors {
+
         prod {
             applicationId = "com.example.myapplication.prod"
             versionName = "1.0-paid"

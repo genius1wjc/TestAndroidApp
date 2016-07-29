@@ -32,7 +32,7 @@ public class MyListActivity extends ListActivity {
         listValues.add("Windows Phone");
 
         // initiate the listadapter
-        ArrayAdapter<String> myAdapter = new ArrayAdapter <String>(this,
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(this,
                 R.layout.row_layout, R.id.listText, listValues);
 
         // assign the activity_list adapter
