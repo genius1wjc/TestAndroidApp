@@ -154,7 +154,8 @@
             android:name=".activity.SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity android:name=".activity.SwipeRefreshActi" />
-        <activity android:name=".activity.DragDropActi"></activity>
+        <activity android:name=".activity.DragDropActi" />
+        <activity android:name=".activity.OnMeasureLayoutActi"></activity>
     </application>
 
 </manifest>
