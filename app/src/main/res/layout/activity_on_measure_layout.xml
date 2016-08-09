@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00f0f0"
+    tools:context="com.example.myapplication.activity.OnMeasureLayoutActi">
+
+    <com.example.myapplication.MyViewGroup
+        android:id="@+id/myViewGroup"
+        android:layout_width="480dp"
+        android:layout_height="300dp"
+        android:background="#0f0f0f">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="第一个TextView" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="第二个TextView" />
+    </com.example.myapplication.MyViewGroup>
+
+</RelativeLayout>
