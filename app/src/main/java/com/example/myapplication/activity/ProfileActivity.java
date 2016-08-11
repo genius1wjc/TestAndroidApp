@@ -67,7 +67,7 @@ public class ProfileActivity extends AppCompatActivity {
         ArrayAdapter<String> mAdapter;
 
         // TODO: turn these into enum
-        String[] activities = {"Canvas", "Hyperlink", "OnMeasure/OnLayout", "Drag and Drop", "Swipe Refresh", "Settings/PreferenceActivity", "Fragment/Back Stack", "Bind Service", "Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] activities = {"WebView", "Canvas", "Hyperlink", "OnMeasure/OnLayout", "Drag and Drop", "Swipe Refresh", "Settings/PreferenceActivity", "Fragment/Back Stack", "Bind Service", "Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content Provider"};
 
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, activities);
@@ -81,6 +81,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "WebView":
+                        startActivity(new Intent(ProfileActivity.this, WebViewActi.class));
+                        break;
                     case "Canvas":
                         startActivity(new Intent(ProfileActivity.this, CanvasActivity.class));
                         break;
