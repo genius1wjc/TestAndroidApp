@@ -160,7 +160,8 @@
         <activity android:name=".activity.MemoryActi" />
         <activity android:name=".HyperlinkActi" />
         <activity android:name=".activity.CanvasActivity" />
-        <activity android:name=".activity.WebViewActi"></activity>
+        <activity android:name=".activity.WebViewActi" />
+        <activity android:name=".activity.ScrollViewsActi"></activity>
     </application>
 
 </manifest>

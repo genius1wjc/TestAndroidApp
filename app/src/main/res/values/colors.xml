@@ -7,4 +7,7 @@
     <color name="splashBackground">#000000</color>
     <color name="cardBackground">#8585ad</color>
     <color name="yellow">#FFFF00</color>
+    <color name="niceBlue">#38bdf4</color>
+    <color name="niceGreen">#33b692</color>
+    <color name="niceOrange">#ed9f4b</color>
 </resources>
