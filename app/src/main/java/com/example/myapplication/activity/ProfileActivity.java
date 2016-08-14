@@ -25,7 +25,7 @@ import android.widget.Toast;
 import com.example.myapplication.HyperlinkActi;
 import com.example.myapplication.R;
 import com.example.myapplication.fragment.AutoCompleteFragment;
-import com.example.myapplication.task.DownloadImageTask;
+import com.example.myapplication.threading.DownloadImageTask;
 
 public class ProfileActivity extends AppCompatActivity {
     private static final String TAG = "Profile";
@@ -67,7 +67,7 @@ public class ProfileActivity extends AppCompatActivity {
         ArrayAdapter<String> mAdapter;
 
         // TODO: turn these into enum
-        String[] activities = {"ScrollViews", "WebView", "Canvas", "Hyperlink", "OnMeasure/OnLayout", "Drag and Drop", "Swipe Refresh", "Settings/PreferenceActivity", "Fragment/Back Stack", "Bind Service", "Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] activities = {"Looper", "ScrollViews", "WebView", "Canvas", "Hyperlink", "OnMeasure/OnLayout", "Drag and Drop", "Swipe Refresh", "Settings/PreferenceActivity", "Fragment/Back Stack", "Bind Service", "Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content Provider"};
 
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, activities);
@@ -81,6 +81,9 @@ public class ProfileActivity extends AppCompatActivity {
                 String text = ((TextView)view).getText().toString();
 
                 switch (text) {
+                    case "Looper":
+                        startActivity(new Intent(ProfileActivity.this, LooperActivity.class));
+                        break;
                     case "ScrollViews":
                         startActivity(new Intent(ProfileActivity.this, ScrollViewsActi.class));
                         break;

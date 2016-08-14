@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <permission
         android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
@@ -161,7 +162,8 @@
         <activity android:name=".HyperlinkActi" />
         <activity android:name=".activity.CanvasActivity" />
         <activity android:name=".activity.WebViewActi" />
-        <activity android:name=".activity.ScrollViewsActi"></activity>
+        <activity android:name=".activity.ScrollViewsActi" />
+        <activity android:name=".activity.LooperActivity"></activity>
     </application>
 
 </manifest>

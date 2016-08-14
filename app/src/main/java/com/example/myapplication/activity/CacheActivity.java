@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.example.myapplication.task.DownloadImageTask;
+import com.example.myapplication.threading.DownloadImageTask;
 import com.example.myapplication.R;
 import com.example.myapplication.utility.ImageCacheUtils;
 

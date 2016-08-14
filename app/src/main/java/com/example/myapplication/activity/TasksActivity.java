@@ -7,7 +7,7 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.example.myapplication.R;
-import com.example.myapplication.task.TestTask;
+import com.example.myapplication.threading.TestTask;
 
 public class TasksActivity extends AppCompatActivity {
 
