@@ -13,6 +13,7 @@ public class MyApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+
         CrashHandler crashHandler = CrashHandler.instance();
         crashHandler.init();
     }
