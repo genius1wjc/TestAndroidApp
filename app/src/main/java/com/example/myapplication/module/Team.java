@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.module;
 
 /**
  * Created by jiechao on 7/12/16.

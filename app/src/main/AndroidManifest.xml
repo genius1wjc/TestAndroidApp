@@ -165,7 +165,8 @@
         <activity android:name=".activity.WebViewActi" />
         <activity android:name=".activity.ScrollViewsActi" />
         <activity android:name=".activity.LooperActivity" />
-        <activity android:name=".activity.PDFActivity"></activity>
+        <activity android:name=".activity.PDFActivity" />
+        <activity android:name=".activity.RetrofitActi"></activity>
     </application>
 
 </manifest>

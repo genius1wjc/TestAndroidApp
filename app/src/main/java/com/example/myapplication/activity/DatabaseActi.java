@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.example.myapplication.DatabaseContract;
+import com.example.myapplication.module.DatabaseContract;
 import com.example.myapplication.R;
 
 public class DatabaseActi extends AppCompatActivity {

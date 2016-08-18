@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.example.myapplication.R;
-import com.example.myapplication.Student;
+import com.example.myapplication.module.Student;
 
 public class ParcelActivity extends AppCompatActivity {
 

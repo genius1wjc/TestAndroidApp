@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
-import com.example.myapplication.GenericStudent;
+import com.example.myapplication.module.GenericStudent;
 import com.example.myapplication.R;
-import com.example.myapplication.Student;
+import com.example.myapplication.module.Student;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

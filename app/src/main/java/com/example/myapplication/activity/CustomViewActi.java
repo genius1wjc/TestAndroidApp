@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.Team;
+import com.example.myapplication.module.Team;
 import com.example.myapplication.TeamListViewAdapter;
 
 import java.util.ArrayList;
