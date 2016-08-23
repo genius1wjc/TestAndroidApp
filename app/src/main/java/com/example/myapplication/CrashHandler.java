@@ -1,9 +1,13 @@
 package com.example.myapplication;
 
+import android.util.Log;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.lang.Thread.UncaughtExceptionHandler;
 
 /**
@@ -12,10 +16,22 @@ import java.lang.Thread.UncaughtExceptionHandler;
 
 public class CrashHandler implements UncaughtExceptionHandler{
 
+    private static final String TAG = CrashHandler.class.getSimpleName();
+
     private static CrashHandler crashHandler;
 
     @Override
     public void uncaughtException(Thread thread, Throwable ex) {
+        StringWriter sw = new StringWriter();
+        PrintWriter pw = new PrintWriter(sw);
+        try {
+            ex.printStackTrace(pw);
+            Log.e(TAG, sw.toString());
+        } finally {
+            if (pw != null)
+                pw.close();
+        }
+
         // TODO Auto-generated method stub
         if (crashHandler != null) {
             try {

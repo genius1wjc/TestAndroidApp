@@ -16,6 +16,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission
         android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
@@ -168,7 +169,8 @@
         <activity android:name=".activity.PDFActivity" />
         <activity android:name=".activity.RetrofitActi" />
         <activity android:name=".activity.ClipboardActi" />
-        <activity android:name=".activity.OttoActivity"></activity>
+        <activity android:name=".activity.OttoActivity" />
+        <activity android:name=".activity.WakeLockActi"></activity>
     </application>
 
 </manifest>
