@@ -170,7 +170,9 @@
         <activity android:name=".activity.RetrofitActi" />
         <activity android:name=".activity.ClipboardActi" />
         <activity android:name=".activity.OttoActivity" />
-        <activity android:name=".activity.WakeLockActi"></activity>
+        <activity android:name=".activity.WakeLockActi" />
+        <activity android:name=".activity.ShareActivity" />
+        <activity android:name=".activity.PicassoActi"></activity>
     </application>
 
 </manifest>
