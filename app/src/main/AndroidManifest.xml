@@ -172,7 +172,8 @@
         <activity android:name=".activity.OttoActivity" />
         <activity android:name=".activity.WakeLockActi" />
         <activity android:name=".activity.ShareActivity" />
-        <activity android:name=".activity.PicassoActi"></activity>
+        <activity android:name=".activity.PicassoActi" />
+        <activity android:name=".activity.SurfaceViewActi"></activity>
     </application>
 
 </manifest>
