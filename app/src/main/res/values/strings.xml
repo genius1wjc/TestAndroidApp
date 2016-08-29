@@ -101,4 +101,8 @@
     <string name="share">Share</string>
 
     <string name="take_picture">Take picture</string>
+
+    <string name="greeting">
+        Hello {name}, <i>today</i>\'s cook <b>yielded</b> {yield} {unit}.
+    </string>
 </resources>

@@ -120,4 +120,6 @@ dependencies {
 
     compile "com.android.support:support-vector-drawable:${supportLibVersion}" // VectorDrawableCompat
     compile "com.android.support:animated-vector-drawable:${supportLibVersion}" // AnimatedVectorDrawableCompat
+
+    compile 'com.squareup.phrase:phrase:1.1.0'
 }

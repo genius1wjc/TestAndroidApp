@@ -174,7 +174,8 @@
         <activity android:name=".activity.ShareActivity" />
         <activity android:name=".activity.PicassoActi" />
         <activity android:name=".activity.SurfaceViewActi" />
-        <activity android:name=".activity.CoordinatorActi"></activity>
+        <activity android:name=".activity.CoordinatorActi" />
+        <activity android:name=".activity.PhraseActivity"></activity>
     </application>
 
 </manifest>
