@@ -175,7 +175,8 @@
         <activity android:name=".activity.PicassoActi" />
         <activity android:name=".activity.SurfaceViewActi" />
         <activity android:name=".activity.CoordinatorActi" />
-        <activity android:name=".activity.PhraseActivity"></activity>
+        <activity android:name=".activity.PhraseActivity" />
+        <activity android:name=".activity.GenericsActi"></activity>
     </application>
 
 </manifest>
