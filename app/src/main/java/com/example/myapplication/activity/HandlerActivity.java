@@ -11,7 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.utility.RestService;
+import com.example.myapplication.service.RestService;
 
 public class HandlerActivity extends Activity {
 

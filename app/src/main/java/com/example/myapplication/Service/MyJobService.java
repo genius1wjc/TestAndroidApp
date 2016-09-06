@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.service;
 
 import android.app.job.JobParameters;
 import android.app.job.JobService;

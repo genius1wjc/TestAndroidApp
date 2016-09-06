@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.myapplication.MusicPlayService;
+import com.example.myapplication.service.MusicPlayService;
 import com.example.myapplication.R;
 
 public class MusicPlayActivity extends AppCompatActivity {

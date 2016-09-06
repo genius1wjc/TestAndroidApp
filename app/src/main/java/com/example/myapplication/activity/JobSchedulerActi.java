@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.example.myapplication.MyJobService;
+import com.example.myapplication.service.MyJobService;
 import com.example.myapplication.R;
 
 public class JobSchedulerActi extends AppCompatActivity {

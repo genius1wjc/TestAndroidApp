@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
 
     <permission
         android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
@@ -53,7 +54,7 @@
             android:name=".activity.DatabaseActi"
             android:label="Database" />
 
-        <service android:name=".MusicPlayService" />
+        <service android:name=".service.MusicPlayService" />
 
         <activity
             android:name=".activity.MusicPlayActivity"
@@ -72,7 +73,7 @@
         <activity android:name=".activity.RestActivity" />
 
         <service
-            android:name=".utility.RestService"
+            android:name=".service.RestService"
             android:exported="false" />
 
         <activity android:name=".activity.GsonActivity" />
@@ -152,7 +153,7 @@
         <activity android:name=".activity.CustomAttriActi" />
         <activity android:name=".activity.BindServiceActi" />
 
-        <service android:name=".LocalService" />
+        <service android:name=".service.LocalService" />
 
         <activity android:name=".activity.FragmentActi" />
         <activity
@@ -181,9 +182,15 @@
         <activity android:name=".activity.JobSchedulerActi" />
 
         <service
-            android:name=".MyJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:name=".service.MyJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.FloatingWindowService"
+            android:enabled="true"
             android:exported="true" />
+
+        <activity android:name=".activity.WindowManagerActi"></activity>
     </application>
 
 </manifest>

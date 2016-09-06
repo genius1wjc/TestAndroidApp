@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.myapplication.MyResultReceiver;
-import com.example.myapplication.utility.RestService;
+import com.example.myapplication.service.RestService;
 
 public class RestActivity extends Activity implements MyResultReceiver.Receiver {
 

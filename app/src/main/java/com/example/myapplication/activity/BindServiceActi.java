@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.myapplication.BuildConfig;
-import com.example.myapplication.LocalService;
+import com.example.myapplication.service.LocalService;
 import com.example.myapplication.R;
 
 public class BindServiceActi extends Activity {
