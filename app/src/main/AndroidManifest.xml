@@ -18,7 +18,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <permission
         android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
@@ -190,7 +190,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activity.WindowManagerActi"></activity>
+        <activity android:name=".activity.WindowManagerActi" />
+        <activity android:name=".activity.HandlerThreadActi"></activity>
     </application>
 
 </manifest>
