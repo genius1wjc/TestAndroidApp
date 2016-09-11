@@ -195,7 +195,7 @@
         <activity
             android:name=".activity.ItemListActivity"
             android:label="@string/title_item_list"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ItemDetailActivity"
             android:label="@string/title_item_detail"
@@ -205,6 +205,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myapplication.activity.ItemListActivity" />
         </activity>
+        <activity
+            android:name=".activity.KeyboardActi"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
     </application>
 
 </manifest>
