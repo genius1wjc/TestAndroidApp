@@ -208,6 +208,7 @@
         <activity
             android:name=".activity.KeyboardActi"
             android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".activity.PopupMenuActi"></activity>
     </application>
 
 </manifest>
