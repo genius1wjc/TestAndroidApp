@@ -10,4 +10,7 @@
     <color name="niceBlue">#38bdf4</color>
     <color name="niceGreen">#33b692</color>
     <color name="niceOrange">#ed9f4b</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#787878</color>
+    <color name="background">#ffffff</color>
 </resources>

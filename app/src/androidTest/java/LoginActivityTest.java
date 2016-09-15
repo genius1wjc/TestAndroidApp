@@ -21,7 +21,6 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalToIgnoringWhiteSpace;
 import static org.hamcrest.Matchers.startsWith;
 
-
 @RunWith(AndroidJUnit4.class)
 public class LoginActivityTest {
 

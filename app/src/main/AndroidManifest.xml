@@ -209,7 +209,9 @@
             android:name=".activity.KeyboardActi"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity android:name=".activity.PopupMenuActi" />
-        <activity android:name=".activity.FutureCallableActi"></activity>
+        <activity android:name=".activity.FutureCallableActi" />
+        <activity android:name=".activity.DayNightActi" />
+        <activity android:name=".activity.ModeActivity"></activity>
     </application>
 
 </manifest>
