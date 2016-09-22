@@ -17,6 +17,10 @@ public class PicassoActi extends AppCompatActivity {
         //Initialize ImageView
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
 
+        Picasso.with(this).setIndicatorsEnabled(true); // 令Picasso在其图像上加上标记，用于辨识图像缓存状态
+        // 图片左上角的蓝色角标表示图像已缓存到本地存储空间（disk），绿色表示图像位于内存（memory），红色表示图像位于网络（network）
+        Picasso.with(getApplicationContext()).setLoggingEnabled(true);
+
         Picasso.with(this)
                 .load("http://www.pablo-ruiz-picasso.net/images/works/223.jpg")
                 .placeholder(R.drawable.logo) // Shown before image is loaded
@@ -25,5 +29,11 @@ public class PicassoActi extends AppCompatActivity {
                 .centerCrop()
                 .rotate(90)
                 .into(imageView);
+
+        Picasso.with(this)
+                .load("http://www.pablo-ruiz-picasso.net/images/works/223.jpg")
+                .centerCrop()
+                .resizeDimen(R.dimen.preview_image_width, R.dimen.preview_image_height)
+                .fetch(); // Use fetch() to pre-fetch images
     }
 }
