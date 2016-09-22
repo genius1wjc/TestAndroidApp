@@ -211,7 +211,8 @@
         <activity android:name=".activity.PopupMenuActi" />
         <activity android:name=".activity.FutureCallableActi" />
         <activity android:name=".activity.DayNightActi" />
-        <activity android:name=".activity.ModeActivity"></activity>
+        <activity android:name=".activity.ModeActivity" />
+        <activity android:name=".activity.AnimRecyclerViewActi"></activity>
     </application>
 
 </manifest>
