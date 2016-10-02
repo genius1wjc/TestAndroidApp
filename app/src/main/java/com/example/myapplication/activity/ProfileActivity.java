@@ -63,11 +63,11 @@ public class ProfileActivity extends AppCompatActivity {
 
     private void addDrawer() {
 
-        ListView mDrawerList = (ListView)findViewById(R.id.navList);
+        ListView mDrawerList = (ListView) findViewById(R.id.navList);
         ArrayAdapter<String> mAdapter;
 
         // TODO: turn these into enum
-        String[] activities = {"Custom listener", "Anim RecyclerView", "DayNight Theme", "Future Callable", "PopupMenu", "Keyboard", "Master Details", "HandlerThread", "WindowManager", "JobScheduler", "Generics", "Phrase", "CoordinatorLayout", "SurfaceView", "Picasso", "Share", "Wake Lock", "Otto", "Clipboard", "Retrofit", "PDF", "Looper", "ScrollViews", "WebView", "Canvas", "Hyperlink", "OnMeasure/OnLayout", "Drag and Drop", "Swipe Refresh", "Settings/PreferenceActivity", "Fragment/Back Stack", "Bind Service", "Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
+        String[] activities = {"SpannableString", "Custom listener", "Anim RecyclerView", "DayNight Theme", "Future Callable", "PopupMenu", "Keyboard", "Master Details", "HandlerThread", "WindowManager", "JobScheduler", "Generics", "Phrase", "CoordinatorLayout", "SurfaceView", "Picasso", "Share", "Wake Lock", "Otto", "Clipboard", "Retrofit", "PDF", "Looper", "ScrollViews", "WebView", "Canvas", "Hyperlink", "OnMeasure/OnLayout", "Drag and Drop", "Swipe Refresh", "Settings/PreferenceActivity", "Fragment/Back Stack", "Bind Service", "Custom Attributes", "Handler/Messenger", "View Animation", "Timer/Progress Dialog", "Photo/For Result", "Parcel", "Sorting", "LayoutParams", "Notification/Pending Intent", "Custom View", "Gesture", "Video/Activity Callbacks", "Simple Adapter/Long List", "Spinner", "Tweet Timeline", "Tweet View", "Twitter Login", "Snackbar", "Inflater", "App Bar", "Loader", "Dialog", "Recycler", "View Pager/Tabbed", "Custom List", "Tasks", "Animation", "Cache", "Database", "Music Play", "My List", "Broadcast", "Grid",
                 "Screen Size", "REST", "Gson", "Map", "Content Provider"};
 
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, activities);
@@ -78,9 +78,12 @@ public class ProfileActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.d(TAG, "Clicked position: " + position + " id: " + id);
 
-                String text = ((TextView)view).getText().toString();
+                String text = ((TextView) view).getText().toString();
 
                 switch (text) {
+                    case "SpannableString":
+                        startActivity(new Intent(ProfileActivity.this, SpannableStringActi.class));
+                        break;
                     case "Custom listener":
                         startActivity(new Intent(ProfileActivity.this, MyParentActivity.class));
                         break;
@@ -302,7 +305,7 @@ public class ProfileActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mActivityTitle = getTitle().toString();
 
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
@@ -359,6 +362,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     /**
      * Shows Database activity on click
+     *
      * @param v
      */
     public void showDBView(View v) {
@@ -368,7 +372,6 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     /**
-     *
      * @param view
      */
     public void sendEmail(View view) {
@@ -385,8 +388,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         try {
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));
-        }
-        catch (android.content.ActivityNotFoundException ex) {
+        } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(this, "There is no email client installed.", Toast.LENGTH_SHORT).show();
         }
     }
@@ -402,15 +404,15 @@ public class ProfileActivity extends AppCompatActivity {
 
     /**
      * Toggles the visibility of the fragment
+     *
      * @param v
      */
     public void toggleFragment(View v) {
         FragmentManager fManager = getSupportFragmentManager();
         Fragment f = fManager.findFragmentByTag("frag");
-        if(f != null && f instanceof AutoCompleteFragment) {
+        if (f != null && f instanceof AutoCompleteFragment) {
             fManager.beginTransaction().remove(f).commit();
-        }
-        else {
+        } else {
             Fragment fragment = new AutoCompleteFragment();
             fManager.beginTransaction().add(R.id.container, fragment, "frag").commit();
         }

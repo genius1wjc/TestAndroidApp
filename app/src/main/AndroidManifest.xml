@@ -213,7 +213,11 @@
         <activity android:name=".activity.DayNightActi" />
         <activity android:name=".activity.ModeActivity" />
         <activity android:name=".activity.AnimRecyclerViewActi" />
+<<<<<<< HEAD
         <activity android:name=".activity.MyParentActivity"></activity>
+=======
+        <activity android:name=".activity.SpannableStringActi"></activity>
+>>>>>>> dda5256070ccac61270d368cfd37ac76d58b5c42
     </application>
 
 </manifest>
